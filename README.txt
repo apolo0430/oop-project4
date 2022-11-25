@@ -7,7 +7,7 @@ Compiler: VS 2022 (VS 2019도 상관 없음)
 (1) PlayInstrument.cpp
 include "instrument.h"
 
-Class MainMenu
+int main()
 {
 	// 메인메뉴 + Piano, Drum, Guitar 클래스 생성
 	/* Main Menu
@@ -16,7 +16,8 @@ Class MainMenu
 	   3. Guitar
 	   4. Open Directory
 	   5. Exit */
-	main() {}
+
+	return 0;
 }
 
 (2) instrument.h
