@@ -26,13 +26,15 @@ Class Instrument
 	/* abstract method */
 	void playInstrument(); // 악기 연주
 	void keyInformation(); // 연주 키 설명
+	/* Piano: C ~ B (+ #)
+	   Guitar: Code */
 
 	/* implemented in this class, playMusic 메소드는 시간 남으면 구현 */
 	void recordMusic(); // 연주 녹음 후 파일 저장
 	// void playMusic();	
 }
 
-Class Piano implement Instrument
+Class Piano implements Instrument
 {
 	private vector<>() soundVec;
 
@@ -42,7 +44,7 @@ Class Piano implement Instrument
 	void keyInformation() {}
 }
 
-Class Guitar implement Instrument
+Class Guitar implements Instrument
 {
 	private vector<>() soundVec;
 
@@ -52,7 +54,7 @@ Class Guitar implement Instrument
 	void keyInformation() {}
 }
 
-Class Drum implement Instrument
+Class Drum implements Instrument
 {
 	private vector<>() soundVec;
 
@@ -62,7 +64,7 @@ Class Drum implement Instrument
 	void keyInformation() {}
 }
 
-Class MainMenu + UI 			(1명)
+main + UI 				(1명)
 Class Instrument 			(2명)
 Class Piano + Class Guitar + Class Drum (1명)
 sound source + demoVideo + 보고서 + 발표 (2명)
