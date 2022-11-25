@@ -9,7 +9,7 @@ include "instrument.h"
 
 int main()
 {
-	// 메인메뉴 + Piano, Drum, Guitar 클래스 생성
+	// 메인메뉴 + Piano, Drum, Guitar 객체 생성
 	/* Main Menu
 	   1. Piano
 	   2. Drum
