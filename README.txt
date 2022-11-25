@@ -61,7 +61,7 @@ Class Drum implement Instrument
 	void keyInformation() {}
 }
 
-Class MainMenu + UI 					(1명)
-Class Instrument 						(2명)
-Class Piano + Class Guitar + Class Drum 		(1명)
-sound source + demoVideo + 보고서 + 발표 	(2명)
+Class MainMenu + UI 			(1명)
+Class Instrument 			(2명)
+Class Piano + Class Guitar + Class Drum (1명)
+sound source + demoVideo + 보고서 + 발표 (2명)
