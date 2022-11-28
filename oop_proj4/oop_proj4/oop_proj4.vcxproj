@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Instrument.cpp" />
     <ClCompile Include="play_instrument.cpp" />
   </ItemGroup>
   <ItemGroup>
