@@ -9,7 +9,7 @@ include "instrument.h"
 
 int main()
 {
-	// 메인메뉴 + Piano, Drum, Guitar 클래스 생성
+	// 메인메뉴 + Piano, Drum, Guitar 객체 생성
 	/* Main Menu
 	   1. Piano
 	   2. Drum
@@ -30,8 +30,8 @@ Class Instrument
 	   Guitar: Code */
 
 	/* implemented in this class, playMusic 메소드는 시간 남으면 구현 */
-	void recordMusic(); // 연주 녹음 후 파일 저장
-	// void playMusic();	
+	void recordMusic() {} // 연주 녹음 후 파일 저장
+	// void playMusic() {}
 }
 
 Class Piano implements Instrument
