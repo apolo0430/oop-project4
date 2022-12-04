@@ -3,7 +3,7 @@
 
 class Instrument
 {
-
+	void recordMusic();
 };
 
 class Piano :Instrument
