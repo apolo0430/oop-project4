@@ -18,6 +18,7 @@ public:
 	~Record();
 	void recordStart();
 	void recordEnd();
+	// void playMusic();
 
 private:
 	// 메모리 구조체
