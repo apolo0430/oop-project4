@@ -13,7 +13,8 @@ LPWSTR multi_to_wide(const char* str)
 }
 
 // WY-C
-Piano::Piano() {
+Piano::Piano()
+{
 	soundVec.push_back("piano_3\\Do.wav");
 	soundVec.push_back("piano_3\\Do#.wav");
 	soundVec.push_back("piano_3\\Re.wav");
@@ -32,10 +33,12 @@ Piano::Piano() {
 	play_num = '0';
 }
 
-void Piano::playInstrument() {		//현재는 1~8온음,		이후 수정은 asdf jkl; 음계 wer uio 반음
-	LPWSTR wide_str = multi_to_wide(&soundVec.at(0)[0]);		// 초기화
+void Piano::playInstrument()	//현재는 1~8온음, 이후 수정은 asdf jkl; 음계 wer uio 반음
+{
+	LPWSTR wide_str = multi_to_wide(&soundVec.at(0)[0]);	// 초기화
 
 	play_num = _getch();
+
 	while (true) {
 		if (play_num == 122) {
 			break;
@@ -92,21 +95,21 @@ void Piano::playInstrument() {		//현재는 1~8온음,		이후 수정은 asdf jkl; 음계 we
 				break;
 			default:
 				break;
-
 			}
 			if (play_num >= 1 + '0' || play_num <= 8 + '0') {
 				PlaySound(wide_str, NULL, SND_ASYNC); //일반 재생
 			}
-
 		}
 	}
 }
 
-void Piano::keyInformation() {
+void Piano::keyInformation()
+{
 
 }
 
-Guitar::Guitar() {
+Guitar::Guitar()
+{
 	soundVec.push_back("guitar\\Do.wav");
 	soundVec.push_back("guitar\\Do#.wav");
 	soundVec.push_back("guitar\\Re.wav");
@@ -125,8 +128,9 @@ Guitar::Guitar() {
 	play_num = '0';
 }
 
-void Guitar::playInstrument() {		//현재는 1~8온음,		이후 수정은 asdf jkl; 음계 wer uio 반음
-	LPWSTR wide_str = multi_to_wide(&soundVec.at(0)[0]);		// 초기화
+void Guitar::playInstrument()	//현재는 1~8온음, 이후 수정은 asdf jkl; 음계 wer uio 반음
+{
+	LPWSTR wide_str = multi_to_wide(&soundVec.at(0)[0]);	// 초기화
 
 	play_num = _getch();
 	while (true) {
@@ -185,17 +189,16 @@ void Guitar::playInstrument() {		//현재는 1~8온음,		이후 수정은 asdf jkl; 음계 w
 				break;
 			default:
 				break;
-
 			}
 			if (play_num >= 1 + '0' || play_num <= 8 + '0') {
 				PlaySound(wide_str, NULL, SND_ASYNC); //일반 재생
 			}
-
 		}
 	}
 }
 
-void Guitar::keyInformation() {
+void Guitar::keyInformation()
+{
 	cout << "How to play Piano" << endl;
 	cout << "1: C" << endl;
 	cout << "2: D" << endl;
