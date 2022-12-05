@@ -62,7 +62,7 @@ Record::~Record()
     delete bn;
 }
 
-void Record::rec()
+void Record::recordStart()
 {
     // 장치에 녹음 준비를 알리는 함수
     if (waveInPrepareHeader(hWaveIn, &WaveInHdr, sizeof(WAVEHDR))) {
@@ -92,7 +92,10 @@ void Record::rec()
     }
     // 콘솔 출력
     cout << "Recording..." << endl;
+}
 
+void Record::recordEnd()
+{
     // 아무 키를 누르고 엔터를 치면 녹음을 중단하고 바로 파일로 저장한다.
     while (true) {
         cout << "If press any key, the record will save to the file." << endl;
@@ -111,10 +114,10 @@ void Record::rec()
     waveInUnprepareHeader(hWaveIn, &WaveInHdr, sizeof(WAVEHDR));
     // 장치 닫기
     waveInClose(hWaveIn);
-    // 버퍼의 데이터를 설정한다.
+    // 버퍼의 데이터를 설정
     WaveInHdr.dwBufferLength = bn->length;
     WaveInHdr.lpData = (char*)bn->buffer;
-    // 파일을 저장한다.
+    // 파일을 저장
     SaveWavFile("C:\Proj4\oop_proj4\record", &pFormat, &WaveInHdr);
 }
 

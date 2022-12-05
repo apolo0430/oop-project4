@@ -16,7 +16,8 @@ class Record
 public:
 	Record();
 	~Record();
-	void rec();
+	void recordStart();
+	void recordEnd();
 
 private:
 	// 메모리 구조체
