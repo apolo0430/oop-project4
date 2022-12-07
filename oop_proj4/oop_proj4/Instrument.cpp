@@ -35,15 +35,10 @@ Piano::Piano()
 
 void Piano::playInstrument()	//현재는 1~8온음, 이후 수정은 asdf jkl; 음계 wer uio 반음
 {
-	LPWSTR wide_str = multi_to_wide(&soundVec.at(0)[0]);	// 초기화
-
-	play_num = _getch();
-
-	while (true) {
+	while (play_num = _getch()) {
 		if (play_num == 122) {
 			break;
 		}
-		play_num = _getch();
 		if (play_num == -32) {
 			if (play_num == UP) {		//옥타브 UP
 
@@ -55,49 +50,49 @@ void Piano::playInstrument()	//현재는 1~8온음, 이후 수정은 asdf jkl; 음계 wer ui
 		else {
 			switch (play_num) {
 			case 'a'://도
-				wide_str = multi_to_wide(&soundVec.at(0)[0]);
+				PlaySound(multi_to_wide(&soundVec.at(0)[0]), NULL, SND_ASYNC);
 				break;
-			case 'q'://도#
-				wide_str = multi_to_wide(&soundVec.at(1)[0]);
+			case 'w'://도#
+				PlaySound(multi_to_wide(&soundVec.at(1)[0]), NULL, SND_ASYNC);
 				break;
 			case 's'://레
-				wide_str = multi_to_wide(&soundVec.at(2)[0]);
+				PlaySound(multi_to_wide(&soundVec.at(2)[0]), NULL, SND_ASYNC);
 				break;
-			case 'w'://레#
-				wide_str = multi_to_wide(&soundVec.at(3)[0]);
+			case 'e'://레#
+				PlaySound(multi_to_wide(&soundVec.at(3)[0]), NULL, SND_ASYNC);
 				break;
 			case 'd'://미
-				wide_str = multi_to_wide(&soundVec.at(4)[0]);
+				PlaySound(multi_to_wide(&soundVec.at(4)[0]), NULL, SND_ASYNC);
 				break;
 			case 'f'://파
-				wide_str = multi_to_wide(&soundVec.at(5)[0]);
+				PlaySound(multi_to_wide(&soundVec.at(5)[0]), NULL, SND_ASYNC);
 				break;
-			case 'r'://파#
-				wide_str = multi_to_wide(&soundVec.at(6)[0]);
+			case 't'://파#
+				PlaySound(multi_to_wide(&soundVec.at(6)[0]), NULL, SND_ASYNC);
 				break;
 			case 'j'://솔
-				wide_str = multi_to_wide(&soundVec.at(7)[0]);
+				PlaySound(multi_to_wide(&soundVec.at(7)[0]), NULL, SND_ASYNC);
 				break;
-			case 'u'://솔#
-				wide_str = multi_to_wide(&soundVec.at(8)[0]);
+			case 'i'://솔#
+				PlaySound(multi_to_wide(&soundVec.at(8)[0]), NULL, SND_ASYNC);
 				break;
 			case 'k'://라
-				wide_str = multi_to_wide(&soundVec.at(9)[0]);
+				PlaySound(multi_to_wide(&soundVec.at(9)[0]), NULL, SND_ASYNC);
 				break;
-			case 'i'://라#
-				wide_str = multi_to_wide(&soundVec.at(10)[0]);
+			case 'o'://라#
+				PlaySound(multi_to_wide(&soundVec.at(10)[0]), NULL, SND_ASYNC);
 				break;
 			case 'l'://시
-				wide_str = multi_to_wide(&soundVec.at(11)[0]);
+				PlaySound(multi_to_wide(&soundVec.at(11)[0]), NULL, SND_ASYNC);
 				break;
 			case ';'://H_도
-				wide_str = multi_to_wide(&soundVec.at(12)[0]);
+				PlaySound(multi_to_wide(&soundVec.at(12)[0]), NULL, SND_ASYNC);
 				break;
 			default:
 				break;
 			}
 			if (play_num >= 1 + '0' || play_num <= 8 + '0') {
-				PlaySound(wide_str, NULL, SND_ASYNC); //일반 재생
+				 //일반 재생
 			}
 		}
 	}
@@ -105,7 +100,20 @@ void Piano::playInstrument()	//현재는 1~8온음, 이후 수정은 asdf jkl; 음계 wer ui
 
 void Piano::keyInformation()
 {
-
+	cout << "How to play Piano" << endl;
+	cout << "a: C" << endl;
+	cout << "w: C#" << endl;
+	cout << "s: D" << endl;
+	cout << "e: D#" << endl;
+	cout << "d: E" << endl;
+	cout << "f: F" << endl;
+	cout << "t: F#" << endl;
+	cout << "j: G" << endl;
+	cout << "i: G#" << endl;
+	cout << "k: A" << endl;
+	cout << "o: A#" << endl;
+	cout << "l: B" << endl;
+	cout << ";: C" << endl;
 }
 
 Guitar::Guitar()
@@ -130,14 +138,10 @@ Guitar::Guitar()
 
 void Guitar::playInstrument()	//현재는 1~8온음, 이후 수정은 asdf jkl; 음계 wer uio 반음
 {
-	LPWSTR wide_str = multi_to_wide(&soundVec.at(0)[0]);	// 초기화
-
-	play_num = _getch();
-	while (true) {
+	while (play_num = _getch()) {
 		if (play_num == 122) {
 			break;
 		}
-		play_num = _getch();
 		if (play_num == -32) {
 			if (play_num == UP) {		//옥타브 UP
 
@@ -149,49 +153,49 @@ void Guitar::playInstrument()	//현재는 1~8온음, 이후 수정은 asdf jkl; 음계 wer u
 		else {
 			switch (play_num) {
 			case 'a'://도
-				wide_str = multi_to_wide(&soundVec.at(0)[0]);
+				PlaySound(multi_to_wide(&soundVec.at(0)[0]), NULL, SND_ASYNC);
 				break;
-			case 'q'://도#
-				wide_str = multi_to_wide(&soundVec.at(1)[0]);
+			case 'w'://도#
+				PlaySound(multi_to_wide(&soundVec.at(1)[0]), NULL, SND_ASYNC);
 				break;
 			case 's'://레
-				wide_str = multi_to_wide(&soundVec.at(2)[0]);
+				PlaySound(multi_to_wide(&soundVec.at(2)[0]), NULL, SND_ASYNC);
 				break;
-			case 'w'://레#
-				wide_str = multi_to_wide(&soundVec.at(3)[0]);
+			case 'e'://레#
+				PlaySound(multi_to_wide(&soundVec.at(3)[0]), NULL, SND_ASYNC);
 				break;
 			case 'd'://미
-				wide_str = multi_to_wide(&soundVec.at(4)[0]);
+				PlaySound(multi_to_wide(&soundVec.at(4)[0]), NULL, SND_ASYNC);
 				break;
 			case 'f'://파
-				wide_str = multi_to_wide(&soundVec.at(5)[0]);
+				PlaySound(multi_to_wide(&soundVec.at(5)[0]), NULL, SND_ASYNC);
 				break;
-			case 'r'://파#
-				wide_str = multi_to_wide(&soundVec.at(6)[0]);
+			case 't'://파#
+				PlaySound(multi_to_wide(&soundVec.at(6)[0]), NULL, SND_ASYNC);
 				break;
 			case 'j'://솔
-				wide_str = multi_to_wide(&soundVec.at(7)[0]);
+				PlaySound(multi_to_wide(&soundVec.at(7)[0]), NULL, SND_ASYNC);
 				break;
-			case 'u'://솔#
-				wide_str = multi_to_wide(&soundVec.at(8)[0]);
+			case 'i'://솔#
+				PlaySound(multi_to_wide(&soundVec.at(8)[0]), NULL, SND_ASYNC);
 				break;
 			case 'k'://라
-				wide_str = multi_to_wide(&soundVec.at(9)[0]);
+				PlaySound(multi_to_wide(&soundVec.at(9)[0]), NULL, SND_ASYNC);
 				break;
-			case 'i'://라#
-				wide_str = multi_to_wide(&soundVec.at(10)[0]);
+			case 'o'://라#
+				PlaySound(multi_to_wide(&soundVec.at(10)[0]), NULL, SND_ASYNC);
 				break;
 			case 'l'://시
-				wide_str = multi_to_wide(&soundVec.at(11)[0]);
+				PlaySound(multi_to_wide(&soundVec.at(11)[0]), NULL, SND_ASYNC);
 				break;
 			case ';'://H_도
-				wide_str = multi_to_wide(&soundVec.at(12)[0]);
+				PlaySound(multi_to_wide(&soundVec.at(12)[0]), NULL, SND_ASYNC);
 				break;
 			default:
 				break;
 			}
 			if (play_num >= 1 + '0' || play_num <= 8 + '0') {
-				PlaySound(wide_str, NULL, SND_ASYNC); //일반 재생
+				//일반 재생
 			}
 		}
 	}
@@ -199,13 +203,18 @@ void Guitar::playInstrument()	//현재는 1~8온음, 이후 수정은 asdf jkl; 음계 wer u
 
 void Guitar::keyInformation()
 {
-	cout << "How to play Piano" << endl;
-	cout << "1: C" << endl;
-	cout << "2: D" << endl;
-	cout << "3: E" << endl;
-	cout << "4: F" << endl;
-	cout << "5: G" << endl;
-	cout << "6: A" << endl;
-	cout << "7: B" << endl;
-	cout << "8: C" << endl;
+	cout << "How to play Guitar" << endl;
+	cout << "a: C" << endl;
+	cout << "w: C#" << endl;
+	cout << "s: D" << endl;
+	cout << "e: D#" << endl;
+	cout << "d: E" << endl;
+	cout << "f: F" << endl;
+	cout << "t: F#" << endl;
+	cout << "j: G" << endl;
+	cout << "i: G#" << endl;
+	cout << "k: A" << endl;
+	cout << "o: A#" << endl;
+	cout << "l: B" << endl;
+	cout << ";: C" << endl;
 }
