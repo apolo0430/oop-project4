@@ -1,10 +1,7 @@
 ﻿  Instrument.cpp
-C:\Users\sueun\source\oop-project4\oop_proj4\oop_proj4\instrument.h(7,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
-C:\Users\sueun\source\oop-project4\oop_proj4\oop_proj4\Instrument.cpp(9,85): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Proj4\oop_proj4\oop_proj4\Instrument.cpp(8,85): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  metronome.cpp
+C:\Proj4\oop_proj4\oop_proj4\metronome.cpp(15,19): warning C4244: '인수': 'double'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   play_instrument.cpp
-C:\Users\sueun\source\oop-project4\oop_proj4\oop_proj4\instrument.h(7,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
   코드를 생성하고 있습니다...
-Instrument.obj : error LNK2019: __imp_PlaySoundW"public: void __cdecl Guitar::playInstrument(void)" (?playInstrument@Guitar@@QEAAXXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
-Instrument.obj : error LNK2019: "public: __cdecl Metronome::Metronome(int)" (??0Metronome@@QEAA@H@Z)"public: void __cdecl Instrument::metronome(void)" (?metronome@Instrument@@QEAAXXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
-Instrument.obj : error LNK2019: "public: __cdecl Metronome::~Metronome(void)" (??1Metronome@@QEAA@XZ)"public: void __cdecl Instrument::metronome(void)" (?metronome@Instrument@@QEAAXXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
-C:\Users\sueun\source\oop-project4\oop_proj4\x64\Debug\oop_proj4.exe : fatal error LNK1120: 3개의 확인할 수 없는 외부 참조입니다.
+  oop_proj4.vcxproj -> C:\Proj4\oop_proj4\x64\Debug\oop_proj4.exe

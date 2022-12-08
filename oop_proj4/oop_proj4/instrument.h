@@ -1,15 +1,11 @@
 #ifndef __instrumentH__
 #define __instrumentH__
 
-#include <iostream>
-#include <Windows.h>
+#include "metronome.h"
 #include <vector>
-#include <conio.h>;	//_getch, WY-C
 
 #define UP 72
 #define DOWN 80
-
-using namespace std;
 
 class Instrument
 {

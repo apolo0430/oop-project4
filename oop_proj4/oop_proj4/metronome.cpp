@@ -1,6 +1,3 @@
-#include <iostream>
-#include <windows.h>
-#include <conio.h>
 #include "metronome.h"
 
 Metronome::Metronome(int f) : freq(f)
@@ -13,7 +10,7 @@ Metronome::~Metronome() {}
 
 void Metronome::loop(double period)
 {
-    while (getch() != 13) // keyboard hit 시 정지
+    while (_getch() != 13) // keyboard hit 시 정지
     {
         Beep(392, period);
     }

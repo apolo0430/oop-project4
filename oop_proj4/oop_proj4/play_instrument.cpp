@@ -1,5 +1,4 @@
 #include "instrument.h"
-#include "metronome.h"
 
 int main()
 {

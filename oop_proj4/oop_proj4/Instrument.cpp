@@ -1,5 +1,4 @@
 #include "instrument.h"
-#include "metronome.h"
 
 //파일 형변환 WY-C
 LPWSTR multi_to_wide(const char* str)
@@ -52,14 +51,6 @@ void Piano::playInstrument()	//현재는 1~8온음, 이후 수정은 asdf jkl; 음계 wer ui
 		if (play_num == 122) {
 			break;
 		}
-		if (play_num == -32) {
-			if (play_num == UP) {		//옥타브 UP
-
-			}
-			else if (play_num == DOWN) {//옥타브 DOWN
-
-			}
-		}
 		else {
 			switch (play_num) {
 			case 'a'://도
@@ -103,9 +94,6 @@ void Piano::playInstrument()	//현재는 1~8온음, 이후 수정은 asdf jkl; 음계 wer ui
 				break;
 			default:
 				break;
-			}
-			if (play_num >= 1 + '0' || play_num <= 8 + '0') {
-				 //일반 재생
 			}
 		}
 	}
@@ -155,14 +143,6 @@ void Guitar::playInstrument()	//현재는 1~8온음, 이후 수정은 asdf jkl; 음계 wer u
 		if (play_num == 122) {
 			break;
 		}
-		if (play_num == -32) {
-			if (play_num == UP) {		//옥타브 UP
-
-			}
-			else if (play_num == DOWN) {//옥타브 DOWN
-
-			}
-		}
 		else {
 			switch (play_num) {
 			case 'a'://도
@@ -206,9 +186,6 @@ void Guitar::playInstrument()	//현재는 1~8온음, 이후 수정은 asdf jkl; 음계 wer u
 				break;
 			default:
 				break;
-			}
-			if (play_num >= 1 + '0' || play_num <= 8 + '0') {
-				//일반 재생
 			}
 		}
 	}

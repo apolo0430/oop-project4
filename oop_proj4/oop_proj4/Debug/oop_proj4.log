@@ -1,0 +1,9 @@
+﻿  Instrument.cpp
+C:\Proj4\oop_proj4\oop_proj4\instrument.h(7,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  metronome.cpp
+C:\Proj4\oop_proj4\oop_proj4\metronome.cpp(18,19): warning C4244: '인수': 'double'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  play_instrument.cpp
+C:\Proj4\oop_proj4\oop_proj4\instrument.h(7,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  코드를 생성하고 있습니다...
+Instrument.obj : error LNK2019: __imp__PlaySoundW@12"public: void __thiscall Guitar::playInstrument(void)" (?playInstrument@Guitar@@QAEXXZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+C:\Proj4\oop_proj4\Debug\oop_proj4.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
