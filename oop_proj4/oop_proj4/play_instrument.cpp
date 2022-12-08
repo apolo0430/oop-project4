@@ -1,4 +1,5 @@
 #include "instrument.h"
+#include "metronome.h"
 
 int main()
 {
@@ -13,11 +14,13 @@ int main()
 
 		switch (order) {
 		case 1:
+			piano.metronome();
 			piano.keyInformation();
 			piano.playInstrument();
 
 			break;
 		case 2:
+			guitar.metronome();
 			guitar.keyInformation();
 			guitar.playInstrument();
 

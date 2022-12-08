@@ -1,4 +1,5 @@
 #include "instrument.h"
+#inlcude "metronme.h"
 
 //파일 형변환 WY-C
 LPWSTR multi_to_wide(const char* str)
@@ -10,6 +11,19 @@ LPWSTR multi_to_wide(const char* str)
 	wide_str[strlen(str)] = NULL;
 
 	return (wide_str);
+}
+
+Instrument::metronome()
+{
+	int bpm;
+	while (std::cin >> bpm)
+	{
+		if (bpm < 30)
+			std::cout << "enter a higher bpm\n";
+		else
+			Metronome metronome(bpm);;
+	}
+	return 0;
 }
 
 // WY-C

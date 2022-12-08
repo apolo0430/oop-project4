@@ -15,8 +15,9 @@ class Instrument
 {
 public:
 	/* abstract method */
-	void  playInstrument() {} // 악기 연주
+	void playInstrument() {} // 악기 연주
 	void keyInformation() {} // 연주 키 설명
+	void metronome() {}
 	/* Piano: C ~ B (+ #)
 	   Guitar: Code */
 };
