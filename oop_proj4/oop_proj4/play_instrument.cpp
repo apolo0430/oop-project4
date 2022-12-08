@@ -6,6 +6,7 @@ int main()
 	int order;
 	Piano piano;
 	Guitar guitar;
+	Instrument instrumnet;
 
 	while (true) {
 		cout << "1. Piano" << endl << "2. Guitar" << endl << "3. Exit" << endl << "Select: ";
@@ -14,13 +15,13 @@ int main()
 
 		switch (order) {
 		case 1:
-			piano.metronome();
+			instrumnet.metronome();
 			piano.keyInformation();
 			piano.playInstrument();
 
 			break;
 		case 2:
-			guitar.metronome();
+			instrumnet.metronome();
 			guitar.keyInformation();
 			guitar.playInstrument();
 
