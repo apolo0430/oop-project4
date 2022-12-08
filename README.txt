@@ -1,4 +1,4 @@
-project17.sln이랑 project17 폴더 사용하면 됨.
+project17.sln이랑 project17 폴더 / bit1000x563(그림) 사용하면 됨.
 
 일리히트 외부라이브러리 사용
 https://202psj.tistory.com/1493
